@@ -1,0 +1,25 @@
+minimum_cumulusci_version: '3.77.0'
+project:
+    name: cumulus-food-bank
+    package:
+        name: cumulus-food-bank
+        api_version: '55.0'
+    git:
+        default_branch: 'main'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/cumulus-food-bank/tests
+            options:
+                outputdir: robot/cumulus-food-bank/results
+
+    robot_testdoc:
+        options:
+            path: robot/cumulus-food-bank/tests
+            output: robot/cumulus-food-bank/doc/cumulus-food-bank_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
