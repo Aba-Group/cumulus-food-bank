@@ -3,6 +3,7 @@ project:
       name: cumulus-food-bank
       package:
             name: cumulus-food-bank
+            namespace: cumulusabagroup
             api_version: "55.0"
       git:
             default_branch: "main"
